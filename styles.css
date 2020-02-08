@@ -3,7 +3,7 @@
   src: url(font_1_honokamarugo_1.1.ttf);
 }
 @font-face {
-  font-family: "Myriad Set Pro";
+  font-family: "無数のセットプロ";
   src: url(myriad-set-pro_text.ttf);
 }
 @font-face {
@@ -37,6 +37,10 @@ h1 {
 
 .topbar {
   background-color: yellow
+}
+
+.bottomtext {
+  font-family: "無数のセットプロ";
 }
 
 /* Style the buttons that are used to open the tab content */
