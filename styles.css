@@ -28,19 +28,17 @@ h1 {
   text-align: left;
 }
 
-/* Style the tab */
-.tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: inherit;
-}
-
 .topbar {
   background-color: yellow
 }
 
-.bottomtext {
-  font-family: "無数のセットプロ";
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: none;
+  background-color: inherit;
+  font-size: 14px;
+  font-family: "タイムマシンわ号";
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -65,9 +63,13 @@ h1 {
 }
 
 /* Style the tab content */
-.tabcontent {
+.bottomtext {
   display: none;
   padding: 6px 12px;
   border: 1px solid #0f0;
   border-top: none;
+  font-family: "無数のセットプロ";
+  font-variant: normal;
+  font-weight: normal;
+  color: white;
 }
