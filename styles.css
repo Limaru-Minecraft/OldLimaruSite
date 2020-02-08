@@ -11,6 +11,10 @@
   src: url(timemachine-wa.ttf);
 }
 
+*{
+  margin: 0 auto;
+}
+
 body {
   background-image: url('osaka.jpg');
   background-size: cover;
