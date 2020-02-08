@@ -16,10 +16,11 @@
 }
 
 body {
+  background-color: black;
   background-image: url('osaka.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: 0px 170px;
 }
 
 h1 {
@@ -66,7 +67,7 @@ h1 {
 .bottomtext {
   display: none;
   padding: 6px 12px;
-  border: 1px solid #0f0;
+  border: none;
   border-top: none;
   font-family: "無数のセットプロ";
   font-variant: normal;
