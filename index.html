@@ -1,62 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-<title>Limaru</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<script src="scripts.js"></script>
-<link rel="shortcut icon" href="limaruflag.png" />
+  <title>Limaru City Server</title>
+  <link rel="shortcut icon" href="Resources/limaruflag.png" />
+  <link rel="stylesheet" href="master.css">
+  <script async="" src="scripts.js"></script>
 </head>
-
-<body style="background-image: url('osaka.jpg')";>
+<body>
   <div class="topbar">
-    <div style="float: initial;">
-      <img src="limaruflag.png" alt="Limaru Flag" width="150" height="100" style="padding: 2px 0px 0px 2px; float:left;">
-      <h1 style="font-size:24px; line-height: 0.5; padding-left: 160px; padding-top: 20px;">The Federal Republic</h1>
-      <h1 style="padding-left: 160px; padding-top: 10px;">of Limaru</h1>
-      <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'Home')" style="font-size: 16px; color: gray;       font-family: '無数のセットプロ';">Home</button>
-        <button class="tablinks" onclick="openTab(event, 'Joining')" style="font-size: 16px; color: gray; font-family: '無数のセットプロ';">Joining Limaru</button>
-        <button class="tablinks" onclick="openTab(event, 'Railmap')" style="font-size: 16px; color: green; font-family: '無数のセットプロ';">Rail Map</button>
-        <button class="tablinks" onclick="openTab(event, 'Dynmap')" style="font-size: 16px; color: green; font-family: '無数のセットプロ';">Dynamic Map</button>
-        <button class="tablinks" onclick="openTab(event, 'Plans')" style="font-size: 16px; color: red; font-family: '無数のセットプロ';">Future Plans</button>
-        <button class="tablinks" onclick="openTab(event, 'Social')" style="font-size: 16px; font-family: '無数のセットプロ';">Social</button>
-      </div>
+    <div class="websitetitle">
+      <h1 style='font-size:24px; padding: 0px 10px;'>Federal Republic of Limaru</h1>
     </div>
+    <a class="active" href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="railmap.html">Rail Map</a>
+    <a href="http://limaru.ddns.net:8123">Dynmap</a>
+    <a href="server rules.html">Server Rules</a>
   </div>
-
-  <div id="Home" class="bottomtext" style="display:block;">
-    <h2 style="text-align: center;">WEBSITE STATUS</h2>
-    <h3 style="text-align: center;">Wesbite under construction. Please bear with us for our 1990's style for the time being.</h3>
+  <div class="b">
+    <br>
+    <br>
+    <p class="hed1">Create. Build. Explore.</p>
+    <p style="text-align: left; font-size: 24px;"><b style="font-size:36px;">Limaru</b> – A survival server with a constant power struggle<br>that makes it so much more.</p>
+    <p style="text-align: right; font-size: 24px;"><b>Join Limaru today!</b></p>
+    <p style="text-align: right; font-size: 14px;">Server version: JE <code>1.12</code> to <code>1.15</code>, and BE <code>1.14</code>.<br> Best played on JE <code>1.12</code> to <code>1.13</code>.</p>
+    <p style="text-align: right; font-size: 20px;" id="IP">Server IP: <code>limaru.ddns.net:25565</code></p>
+    <iframe style="position: absolute; right:0; padding-right: 100px;" src="https://canary.discordapp.com/widget?id=590800544214286347&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+    <br>
+    <br>
+    <h2 style="text-align: left; font-size: 28px; text-decoration:underline;">Newest announcements</h2>
+    <p>No announcements at the moment</p>
+    <h2 style="text-align: left; font-size: 28px; text-decoration:underline;">Events</h2>
+    <p>Saturday, 4 April 2020: Build Battle among Mike's classmates</p>
   </div>
-
-  <div id="Joining" class="bottomtext">
-    <h2 style="text-align: center;">JOINING LIMARU<br>ㅤ</h2>
-    <h3 style="text-align: center; line-height: 2.5;">Limaru is available on both Minecraft Java Edition and Bedrock Edition (mobile devices, including Windows 10 Edition, only).<br>Join Limaru now at</h3>
-    <h3 style="text-align: center; line-height: 2.5; font-size:30px; font-family: monospace;"><kbd>limaru.ddns.net</kbd></h3>
-    <p style="text-align: center; line-height: 2.5;">Ports: Bedrock Edition players should use <kbd>19132</kbd> while Java Edition players should use <kbd>25565</kbd>.</p>
-  </div>
-
-  <div id="Railmap" class="bottomtext">
-    <h2 style="text-align: center;">RAIL MAP STATUS</h2>
-    <p>Lipan map coming soon!</p>
-  </div>
-
-  <div id="Plans" class="bottomtext">
-    <h2 style="text-align: center;">FUTURE PLANS</h2>
-    <ol>
-      <li>Finish up this website</li>
-      <li>Finish up the map</li>
-      <li>actually do something (update me on this one)</li>
-    </ol>
-  </div>
-
-  <div id="Social" class="bottomtext">
-    <h2 style="text-align: center;">SOCIAL LINKS</h2>
-    <p>Discord: <a href="https://discord.gg/KbfY8Mp">click here</a></p>
-    <p>Twitter: <a href="https://www.twitter.com/Mineshafter61">click here</a></p>
-  </div>
-
 </body>
-</html>
