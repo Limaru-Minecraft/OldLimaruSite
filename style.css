@@ -27,7 +27,7 @@ header{
 
 header h1{
     padding: 10px 0;
-    font-size:24px;
+    font-size:28px;
 }
 
 header div{
@@ -37,7 +37,7 @@ header div{
 header a{
     text-decoration: none;
     color: green;
-    padding: 14px 16px;
+    padding: 9px 15px;
     font-size: 17px;
     font-family: '無数のセットプロ';
 }
@@ -87,15 +87,20 @@ header a.active {
     width: 65%;
 }
 #quote h2{
-    padding-top: 60px;
-    font-size: 32px;
+    font-size: 26px;
     color: white;
     width: 65%;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    background-color: rgba(0,0,0,0.5);
 }
 #quote #p2{
     font-size: 18px;
     color: white;
     width: 65%;
+    padding: 10px;
+    background-color: rgba(0,0,0,0.5);
 }
 #main-picture iframe{
     position: absolute;
