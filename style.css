@@ -125,3 +125,17 @@ header a.active {
 .events{
     background-color: #FFBBBB;
 }
+#rules{
+  padding-left: 30px;
+  padding-top: 150px;
+  width: 550px;
+  color: white;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
+}
+#rules ol{
+  padding-left: 30px;
+  font-size: 24px;
+}
+.desc{
+  font-size: 18px;
+}
