@@ -178,11 +178,17 @@ header a.active {
     }
 }
 @media only screen and (max-width: 600px) {
+    header{
+        padding: 3px 4px;
+    }
+    header h1{
+        font-size:24px;
+    }
     header div{
         padding: 17px 0;
     }
     header a{
-        padding: 6px 10px;
+        padding: 3px 5px;
         font-size: 16px;
     }
 }
@@ -196,7 +202,7 @@ header a.active {
 @media only screen and (max-height: 760px) {
     #quote img{
         width:38%;
-        padding-top: 140px;
+        padding-top: 160px;
     }
     #quote *{
         width: 65%;
