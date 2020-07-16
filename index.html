@@ -25,7 +25,7 @@
         <h2>play.limaru.cf:25580</h2>
         <p id="p2">Java 1.15</p>
       </div>
-      <iframe src="https://canary.discordapp.com/widget?id=590800544214286347&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
+      <iframe id="discordembed" src="https://canary.discordapp.com/widget?id=590800544214286347&theme=light" width="350" height="500" allowtransparency="true" frameborder="0"></iframe>
     </div>
     <div id="AnnounceEvents">
       <div class="AE announce">
@@ -35,6 +35,62 @@
       <div class="AE events">
         <h1>Events</h1>
         <p>There are no Events to show.</p>
+      </div>
+      <div id="youtube">
+        <h1>Latest Videos from Limaru</h1>
+        <div id="yjjcity">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UClXAzRUETUB8Zqn7PwaPBSQ" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe class="latestVideoEmbed" vnum='1' cid="UClXAzRUETUB8Zqn7PwaPBSQ" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe class="latestVideoEmbed" vnum='2' cid="UClXAzRUETUB8Zqn7PwaPBSQ" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe class="latestVideoEmbed" vnum='3' cid="UClXAzRUETUB8Zqn7PwaPBSQ" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <script>
+            var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+            function loadVideo(iframe){
+              $.getJSON( reqURL + iframe.getAttribute('cid'),
+              function(data) {
+                var videoNumber = (iframe.getAttribute('vnum')?Number(iframe.getAttribute('vnum')):0);
+                console.log(videoNumber);
+                var link = data.items[videoNumber].link;
+                id = link.substr(link.indexOf("=") + 1);  
+                iframe.setAttribute("src","https://youtube.com/embed/"+id + "?controls=1&autoplay=0");
+              }
+            );
+            }
+            var iframes = document.getElementsByClassName('latestVideoEmbed');
+            for (var i = 0, len = iframes.length; i < len; i++){
+              loadVideo(iframes[i]);
+            }
+          </script>
+        </div>
+        <hr>
+        <br>
+        <h1>Latest Videos from YJJ City Project</h1>
+        <div id="yjjcity">
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+          <iframe class="latestVideoEmbed" vnum='0' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe class="latestVideoEmbed" vnum='1' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe class="latestVideoEmbed" vnum='2' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <iframe class="latestVideoEmbed" vnum='3' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
+          <script>
+            var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+            function loadVideo(iframe){
+              $.getJSON( reqURL + iframe.getAttribute('cid'),
+              function(data) {
+                var videoNumber = (iframe.getAttribute('vnum')?Number(iframe.getAttribute('vnum')):0);
+                console.log(videoNumber);
+                var link = data.items[videoNumber].link;
+                id = link.substr(link.indexOf("=") + 1);  
+                iframe.setAttribute("src","https://youtube.com/embed/"+id + "?controls=1&autoplay=0");
+              }
+            );
+            }
+            var iframes = document.getElementsByClassName('latestVideoEmbed');
+            for (var i = 0, len = iframes.length; i < len; i++){
+              loadVideo(iframes[i]);
+            }
+          </script>
+        </div>
       </div>
     </div>
   </body>

@@ -23,6 +23,7 @@ header{
     padding: 10px 15px;
     background-color: white;
     top:0;
+    z-index: 999;
 }
 
 header h1{
@@ -31,7 +32,7 @@ header h1{
 }
 
 header div{
-    padding: 20px 0px;
+    padding: 20px 0;
 }
 
 header a{
@@ -76,12 +77,12 @@ header a.active {
 }
 
 #quote h1{
-    padding-top: 50px;
+    padding-top: 40px;
     font-size: 36px;
     color: white;
 }
 #quote #p1{
-    padding-top: 60px;
+    padding: 30px 0;
     font-size: 24px;
     color: white;
     width: 65%;
@@ -130,6 +131,32 @@ header a.active {
 .events{
     background-color: #FFBBBB;
 }
+
+#youtube{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    padding:10px;
+    text-align: center;
+}
+#youtube h1{
+    color: white;
+    padding:1vh 5px;
+}
+#youtube #yjjcity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(219, 0, 0);
+}
+#youtube #yjjcity iframe{
+    margin: 10px 5px;
+    border-radius: 15px;
+}
+
 #rules{
   padding-left: 30px;
   padding-top: 150px;
@@ -143,4 +170,51 @@ header a.active {
 }
 .desc{
   font-size: 18px;
+}
+
+@media only screen and (max-width: 900px) {
+    #discordembed{
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 600px) {
+    header div{
+        padding: 17px 0;
+    }
+    header a{
+        padding: 6px 10px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-height: 660px) {
+    #discordembed{
+        display: none !important;
+    }
+}
+
+@media only screen and (max-height: 760px) {
+    #quote img{
+        width:38%;
+        padding-top: 140px;
+    }
+    #quote *{
+        width: 65%;
+    }
+    #quote h1{
+        padding-top: 10px;
+        font-size: 32px;
+    }
+    #quote #p1{
+        padding: 20px 0;
+        font-size: 20px;
+    }
+    #quote h2{
+        font-size: 24px;
+        width: 55%;
+    }
+    #quote #p2{
+        font-size: 14px;
+        width: 55%;
+    }
 }
