@@ -218,3 +218,10 @@ header a.active {
         width: 55%;
     }
 }
+
+@media only screen and (max-height: 760px) and (min-width: 300px) {
+    #quote h2{
+        position: absolute;
+        right:10px;
+    }
+}
