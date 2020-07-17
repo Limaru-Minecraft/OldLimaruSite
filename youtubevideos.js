@@ -12,5 +12,5 @@ function loadVideo(iframe){
 }
 var iframes = document.getElementsByClassName('latestVideoEmbed');
 for (var i = 0, len = iframes.length; i < len; i++){
-  loadVideo(iframes[i]);
+  window.onload=loadVideo(iframes[i]);
 }
