@@ -66,8 +66,8 @@ header a.active {
 }
 
 #quote{
-    padding-left: 30px;
-    width: 550px;
+    padding-left: 5%;
+    max-width: 450px;
     height: 100%;
     background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
 }
@@ -91,7 +91,7 @@ header a.active {
 #quote h2{
     font-size: 26px;
     color: white;
-    width: 65%;
+    width: 310px;
     padding: 10px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
@@ -100,7 +100,7 @@ header a.active {
 #quote #p2{
     font-size: 18px;
     color: white;
-    width: 65%;
+    width: 310px;
     padding: 10px;
     background-color: rgba(0,0,0,0.5);
 }
@@ -141,6 +141,7 @@ header a.active {
     font-family: '無数のセットプロ';
     padding:10px;
     text-align: center;
+    overflow: hidden;
 }
 #youtube h1{
     color: white;
@@ -180,7 +181,7 @@ header a.active {
 }
 @media only screen and (max-width: 600px) {
     header{
-        padding: 5px 3px;
+        padding: 8px 6px;
     }
     header h1{
         font-size:24px;
@@ -205,18 +206,18 @@ header a.active {
         width: 100%;
     }
     #quote img{
-        width:38%;
+        width:20vh;
         padding-top: 160px;
     }
     #quote{
-        width: 100%;
+        max-width: 100%;
         height: 100%;
         background-color: rgba(0,0,0,0.3);
         background-image:none;
     }
     #quote h1{
         padding-top: 10px;
-        font-size: 32px;
+        font-size: 4vw;
     }
     #quote #p1{
         padding: 20px 0;
@@ -230,5 +231,18 @@ header a.active {
     #quote #p2{
         font-size: 16px;
         width: 270px;
+    }
+}
+
+@media only screen and (max-height: 440px) and (min-width: 500px){
+    #quote h2{
+        position: absolute;
+        right:0;
+        top:160px;
+    }
+    #quote #p2{
+        position: absolute;
+        right:0;
+        top:205px;
     }
 }
