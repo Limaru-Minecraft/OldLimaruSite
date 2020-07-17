@@ -3,5 +3,9 @@ function copyIP() {
   copyText.select();
   copyText.setSelectionRange(0, 99999);
   document.execCommand("copy");
-  alert("Copied the text: " + copyText.value);
+  document.getElementById('serverIPtooltip').innerHTML = "Copied!";
+  setTimeout(resetCopiedHoverText,2000);
+}
+function resetCopiedHoverText(){
+  document.getElementById('serverIPtooltip').innerHTML = "Click to copy!";
 }
