@@ -58,7 +58,7 @@ header a.active {
     background-color: gray;
     height: 100%;
     width: 100%;
-    background-image: url('Resources/osaka.jpg');
+    background-image: url('Resources/osaka-small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 100px;
