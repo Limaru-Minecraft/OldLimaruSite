@@ -7,14 +7,16 @@
     <meta name="description" content="Welcome to the official Limaru Site!">
     <meta property="og:url" content="https://mineshafter61.github.io/LimaruSite/index.html" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Limaru City Server Site" />
+    <meta property="og:title" content="Limaru - Create. Build. Explore." />
+    <meta property="og:site_name" content="Limaru">
+    <meta property="og:url" content="https://github.com/Mineshafter61/LimaruSite">
     <meta property="og:description" content="Welcome to the official Limaru Site!" />
     <meta property="og:image" content="https://mineshafter61.github.io/LimaruSite/Resources/coloured.png" />
+    <meta name="theme-color" content="#FFFF00">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limaru City Server Site</title>
     <link rel="shortcut icon" href="Resources/coloured.png" />
     <link rel="stylesheet" href="style.css">
-    <script async src="./scripts.js"></script>
   </head>
   <body>
     <header>
@@ -32,7 +34,8 @@
         <img src="Resources/limaruflagsmall.png">
         <h1>Create. Build. Explore.</h1>
         <p id="p1">A city server with a constant power struggle that makes it so much more.</p>
-        <input class="hidden" id="serverIP" value="play.limaru.cf:25580"/>
+        <input type="text" class="hidden" id="serverIP" value="play.limaru.cf:25580"/>
+        <h2 class="hidden" class="tooltip" onclick="copyIP(this)" id="serverip">play.limaru.cf:25580</h2>
         <h2 class="tooltip" onclick="copyIP()">play.limaru.cf:25580<span class="tooltiptext" id="serverIPtooltip">Click to copy!</span></h2>
         <p id="p2">Java 1.15</p>
       </div>
@@ -63,9 +66,11 @@
           <iframe class="latestVideoEmbed" vnum='0' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
           <iframe class="latestVideoEmbed" vnum='1' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
           
-          <script async src="youtubevideos.js"></script>
+          
         </div>
       </div>
     </div>
   </body>
+  <script async src="./scripts.js"></script>
+  <script async src="youtubevideos.js"></script>
 </html>
