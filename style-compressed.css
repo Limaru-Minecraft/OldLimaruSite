@@ -9,7 +9,7 @@ header div{padding:20px 0;}
 header a{text-decoration:none;color:green;padding:9px 15px;font-size:17px;font-family:'無数のセットプロ­';}
 header a:hover{background-color:green;color:yellow;}
 header a.active{background-color:yellow;color:black;}
-#main-picture{background-color:gray;height:100%;width:100%;background-image:url('Resources/osaka-small.jpg');background-size:cover;background-repeat:no-repeat;background-position:0 100px;font-family:'ç„¡æ•°ã®ã‚»ãƒƒãƒˆãƒ—ãƒ­';}
+#main-picture{background-color:gray;height:100%;width:100%;background-image:url('Resources/osaka-small.jpg');background-size:cover;background-repeat:no-repeat;background-position:0 100px;font-family:'無数のセットプロ';}
 #quote{padding-left:5%;max-width:450px;height:100%;background-image:linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);}
 #quote img{width:58%;padding-top:180px;}
 #quote h1{padding-top:40px;font-size:36px;color:white;}
