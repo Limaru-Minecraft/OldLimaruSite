@@ -1,7 +1,7 @@
 @font-face{font-family:"ほのか丸ゴシック";src:url('Resources/font_1_honokamarugo_1.1.ttf');}
 @font-face{font-family:"無数のセットプロ";src:url('Resources/myriad-set-pro_text.ttf');}
 @font-face{font-family:"タイムマシンわ号";src:url('Resources/timemachine-wa.ttf');}
-*{margin:0;padding:0;font-family: Arial, Helvetica, sans-serif;}
+*{margin:0;padding:0;}
 body,html{height:100%;font-family:'無数のセットプロ',Arial, Helvetica, sans-serif;}
 header{position:fixed;width:100%;font-family:"ほのか丸ゴシック";color:grey;padding:10px 15px;background-color:white;top:0;z-index:10;box-shadow:0px 10px 10px 0px rgba(0,0,0,0.2);}
 header h1{padding:10px 0;font-size:28px;}
