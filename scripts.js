@@ -57,9 +57,11 @@ function evalStation() {
   var from, to;
   from = document.getElementById("fromInput").value;
   to = document.getElementById("toInput").value;
-<<<<<<< HEAD
-  document.getElementById("SearchResult").innerHTML = from + " " + to;
-=======
-  document.getElementById("SearchResult").innerHTML = "Test";
->>>>>>> 7bbc9bbf4487dad738cf21aab2d9f4bb242c8b9c
+  stationList = ["Bayfront", "Bridgewater", "Coconut Beach", "East Coast Park", "Flatlands", "Inoriye", "Island South", "Island Tip", "Kilometer Road", "Lakeside", "Land's End", "Long Hill", "Lunaru Space Centre", "Minami Woodlands", "Mount Lipan", "Nensylvania", "Newton", "Northwell", "Power Plant", "Round Town", "Seaview Village", "Sea’s End", "Solutional Park", "Sun Moon Lake", "Tau Pi", "Unnamed", "Untitled", "Woodlands", "Xihu", "Zoo"];
+  if (stationList.indexOf(from) >= 0 && stationList.indexOf(to) >= 0) {
+    document.getElementById("SearchResult").innerHTML = "Code for: ｢" + from + "｣ to ｢" + to + "｣";
+  } else {
+    // Error code
+    document.getElementById("SearchResult").innerHTML = "Sorry, but we could not find the stations specified. Please try again.";
+  }
 }
