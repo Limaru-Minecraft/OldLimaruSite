@@ -1,74 +1,51 @@
 <!DOCTYPE html>
-<head>
-  <title>Limaru City Server</title>
-  <link rel="shortcut icon" href="/Resources/coloured.png" />
-  <style>
-    @font-face {
-      font-family: "ほのか丸ゴシック";
-      src: url('Resources/font_1_honokamarugo_1.1.ttf');
-    }
-    @font-face {
-      font-family: "無数のセットプロ";
-      src: url('Resources/myriad-set-pro_text.ttf');
-    }
-    @font-face {
-      font-family: "タイムマシンわ号";
-      src: url('Resources/timemachine-wa.ttf');
-    }
+<html lang="en">
+  <head>
+    <title>Limaru City Server</title>
+    <link rel="shortcut icon" href="/Resources/coloured.png" />
+    <meta charset="utf-8">
+    <title>Limaru City Server</title>
+    <link rel="shortcut icon" href="Resources/coloured.png" />
+    <link rel="stylesheet" href="style.css"/>
+    <script async="" src="scripts.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Federal Republic of Limaru</h1>
+      <div>
+        <a href="index.html">Home</a>
+        <a href="story.html">Our Story</a>
+        <a class="active">Rail Map</a>
+        <a href="http://play.limaru.cf:8077">Dynmap</a>
+        <a href="rules.html">Server Rules</a>
+    </header>
+    <div id="main-picture">
+      <img src="Resources/LipanURMap.png" width="50%" alt="Lipan Railway Map" style="padding-top: 130px;"><br></img>
 
-    body {
-      background-color: white;
-      background-image: url('Resources/osaka.gif');
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: 0px 120px;
-    }
+        <form>
+        <input type="text" placeholder="From..." id="fromInput" onkeyup="fromFilterFunction()" onfocus="fromDropdown()" onblur="fromDropdown()">
+        <!-- <div id="fromDropdown" class="dropdown-content">
+          <input type="button" value="Sun Moon Lake" id="fromStation"></input>
+          <input type="button" value="Round Town" id="fromStation"></button>
+          <input type="button" value="Lakeside" id="fromStation"></button>
+          <input type="button" value="Solutional Park" id="fromStation"></button>
+          <input type="button" value="Newton" id="fromStation"></button>
+          <input type="button" value="Flatlands" id="fromStation"></button>
+        </div> -->
 
-    .topbar {
-      background-color: white;
-      overflow: hidden;
-      width: 100%;
-    }
+        <input type="text" placeholder="To..." id="toInput" onkeyup="toFilterFunction()" onfocus="toDropdown()" onblur="toDropdown()">
+        <!-- <div id="toDropdown" class="dropdown-content">
+          <input type="button" id="toStation">Sun Moon Lake</input>
+          <input type="button" id="toStation">Round Town</button>
+          <input type="button" id="toStation">Lakeside</button>
+          <input type="button" id="toStation">Solutional Park</button>
+          <input type="button" id="toStation">Newton</button>
+          <input type="button" id="fromStation">Flatlands</button>
+        </div> -->
 
-    .topbar a{
-      float: left;
-      color: green;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 15px;
-      font-family: '無数のセットプロ';
-    }
-
-    .topbar a:hover {
-      background-color: green;
-      color: yellow;
-    }
-
-    .topbar a.active {
-      background-color:yellow;
-      color: red;
-    }
-
-    h1 {
-      font-family: "ほのか丸ゴシック";
-      color: grey;
-      text-align: left;
-    }
-  </style>
-</head>
-<body>
-  <div class="topbar">
-    <div class="websitetitle">
-      <h1 style='font-size:24px; padding: 0px 10px;'>Federal Republic of Limaru</h1>
+        <input type="button" value="Search" id="RouteSearch" onclick="evalStation()"/>
+      </form>
+      <p id="SearchResult" style="color: white;"></p>
     </div>
-    <a href="index.html">Home</a>
-    <a href="story.html">Our Story</a>
-    <a class="active" href="railmap.html">Rail Map</a>
-    <a href="http://limaru.ddns.net:8123">Dynmap</a>
-    <a href="rules.html">Server Rules</a>
-  </div>
-  <div>
-    <img src="Resources/LipanURMap.png" width="100%" alt="Lipan Railway Map" style="padding-top: 20px;"></img>
-  </div>
-</body>
+  </body>
+</html>
