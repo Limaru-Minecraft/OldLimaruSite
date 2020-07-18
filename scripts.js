@@ -57,5 +57,9 @@ function evalStation() {
   var from, to;
   from = document.getElementById("fromInput").value;
   to = document.getElementById("toInput").value;
+<<<<<<< HEAD
   document.getElementById("SearchResult").innerHTML = from + " " + to;
+=======
+  document.getElementById("SearchResult").innerHTML = "Test";
+>>>>>>> 7bbc9bbf4487dad738cf21aab2d9f4bb242c8b9c
 }
