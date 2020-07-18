@@ -23,8 +23,8 @@ header{
     padding: 10px 15px;
     background-color: white;
     top:0;
-    z-index: 999;
-    box-shadow: 0px 10px 10px 0px rgba(150,150,150,0.5);
+    z-index: 10;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
 }
 
 header h1{
@@ -61,7 +61,7 @@ header a.active {
     background-image: url('Resources/osaka.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px 120px;
+    background-position: 0 100px;
     font-family: '無数のセットプロ';
 }
 
@@ -91,18 +91,37 @@ header a.active {
 #quote h2{
     font-size: 26px;
     color: white;
-    width: 310px;
     padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    background-color: rgba(100,207,15,0.8);
+}
+#serverip{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(100,207,15,0.9);
+    width: 310px !important;
+}
+#quote a{
+    background-color: rgba(114,137,218,0.9);
+    border-radius: 10px;
+    position: absolute;
+    bottom:30px;
+    right:20px;
+    width: 260px;
+    padding-right: 5px;
+    text-align: center;
+}
+#quote a img{
+    /*position: absolute;
+    bottom: 10%;
+    left: 0%;
+    align-self: center;*/
+    padding:0 10px 0 0;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
 }
 #quote #p2{
     font-size: 18px;
-    color: white;
-    width: 310px;
-    padding: 10px;
-    background-color: rgba(100,207,15,0.8);
+    padding-top: 10px;
 }
 #main-picture iframe{
     position: absolute;
@@ -199,7 +218,7 @@ header a.active {
   
     /* Position the tooltip */
     position: absolute;
-    z-index: 1;
+    z-index: 99;
     bottom: 90%;
     left: 40%;
     margin-left: -60px;
@@ -228,8 +247,8 @@ header a.active {
         padding: 17px 0;
     }
     header a{
-        padding: 3px 5px;
-        font-size: 16px;
+        padding: 5px 5px;
+        font-size: 18px;
     }
 }
 
@@ -244,7 +263,7 @@ header a.active {
         width: 100%;
     }
     #quote img{
-        width:20vh;
+        width:25vh;
         padding-top: 160px;
     }
     #quote{
@@ -254,33 +273,49 @@ header a.active {
         background-image:none;
     }
     #quote h1{
-        padding-top: 10px;
-        font-size: 4vw;
+        padding-top: 13px;
+        font-size: 30px;
     }
     #quote #p1{
         padding: 20px 0;
         font-size: 20px;
         max-width:400px;
     }
-    #quote h2{
+    #serverip{
         font-size: 22px;
         width: 270px;
     }
     #quote #p2{
-        font-size: 16px;
-        width: 270px;
+        font-size: 12px;
     }
 }
 
-@media only screen and (max-height: 440px) and (min-width: 500px){
-    #quote h2{
-        position: absolute;
-        right:0;
-        top:160px;
+@media only screen and (max-height: 468px) and (min-width: 500px){
+    header{
+        padding: 5px 8px;
     }
-    #quote #p2{
+    #quote #p1{
+        max-width:300px;
+    }
+    #quote img{
+        padding-top: 140px;
+    }
+    #serverip{
+        border-radius: 10px 0 0 10px;
         position: absolute;
         right:0;
-        top:205px;
+        top:140px;
+    }
+    #quote a{
+        width: 230px;
+        bottom: 10px;
+    }
+    #quote a img{
+        width: 30px;
+        height: 30px;
+    }
+    #quote a h2{
+        padding:5px 0;
+        font-size: 22px;
     }
 }
