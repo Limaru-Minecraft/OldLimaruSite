@@ -61,13 +61,8 @@ header a.active {
     background-image: url('Resources/osaka-small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-<<<<<<< HEAD
     background-position: 0px 120px;
     font-family: 'MyriadSetPro';
-=======
-    background-position: 0 100px;
-    font-family: '無数のセットプロ';
->>>>>>> 2f55e392c350bbeaa756dd36c2e95f8a32275297
 }
 
 #quote{
