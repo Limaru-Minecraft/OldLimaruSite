@@ -21,30 +21,31 @@
     </header>
     <div id="main-picture">
       <img src="Resources/LipanURMap.png" width="50%" alt="Lipan Railway Map" style="padding-top: 130px;"><br></img>
-      <input type="text" placeholder="From..." id="fromInput" onkeyup="fromFilterFunction()" onfocus="fromDropdown()" onblur="fromBlur()">
-      <div id="fromDropdown" class="dropdown-content">
-        <a href="#about">About</a>
-        <a href="#base">Base</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-        <a href="#custom">Custom</a>
-        <a href="#support">Support</a>
-        <a href="#tools">Tools</a>
-      </div>
-      
-      <div class="to">
-        <button onclick="toDropdown()" class="toBtn">To...</button>
-        <div id="toDropdown" class="dropdown-content">
-          <input type="text" placeholder="Search..." id="toInput" onkeyup="toFilterFunction()">
-          <a href="#about">About</a>
-          <a href="#base">Base</a>
-          <a href="#blog">Blog</a>
-          <a href="#contact">Contact</a>
-          <a href="#custom">Custom</a>
-          <a href="#support">Support</a>
-          <a href="#tools">Tools</a>
-        </div>
-      </div>
+
+        <form>
+        <input type="text" placeholder="From..." id="fromInput" onkeyup="fromFilterFunction()" onfocus="fromDropdown()" onblur="fromDropdown()">
+        <!-- <div id="fromDropdown" class="dropdown-content">
+          <input type="button" value="Sun Moon Lake" id="fromStation"></input>
+          <input type="button" value="Round Town" id="fromStation"></button>
+          <input type="button" value="Lakeside" id="fromStation"></button>
+          <input type="button" value="Solutional Park" id="fromStation"></button>
+          <input type="button" value="Newton" id="fromStation"></button>
+          <input type="button" value="Flatlands" id="fromStation"></button>
+        </div> -->
+
+        <input type="text" placeholder="To..." id="toInput" onkeyup="toFilterFunction()" onfocus="toDropdown()" onblur="toDropdown()">
+        <!-- <div id="toDropdown" class="dropdown-content">
+          <input type="button" id="toStation">Sun Moon Lake</input>
+          <input type="button" id="toStation">Round Town</button>
+          <input type="button" id="toStation">Lakeside</button>
+          <input type="button" id="toStation">Solutional Park</button>
+          <input type="button" id="toStation">Newton</button>
+          <input type="button" id="fromStation">Flatlands</button>
+        </div> -->
+
+        <input type="button" value="Search" id="RouteSearch" onclick="evalStation()"/>
+      </form>
+      <p id="SearchResult" style="color: white;"></p>
     </div>
   </body>
 </html>
