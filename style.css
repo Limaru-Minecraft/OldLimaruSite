@@ -231,11 +231,8 @@ header a.active {
     bottom: 110%;
 }
 
-@media only screen and (max-width: 900px) {
-    #discordembed{
-        display: none !important;
-    }
-}
+
+/*========== Support for smaller screens (Mobile Compatibility) ==========*/
 @media only screen and (max-width: 600px) {
     header{
         padding: 8px 6px;
@@ -252,9 +249,56 @@ header a.active {
     }
 }
 
-@media only screen and (max-height: 660px) {
-    #discordembed{
-        display: none !important;
+@media only screen and (max-width: 690px){
+    #discordinvite #text{
+        display: none;
+    }
+    #quote a{
+        border-radius: 100%;
+        width: 50px !important;
+    }
+    #discordinvite .tooltiptext{
+        left:-100%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    header{
+        padding: 0;
+    }
+    header h1{
+        font-size:22px;
+    }
+    header div{
+        padding: 12px 0;
+    }
+    header a{
+        padding: 8px 10px;
+        font-size: 17px;
+    }
+    #main-picture{
+        background-position: 0 0;
+    }
+    #quote #limaruflag{
+        padding-top: 120px !important;
+    }
+    #quote h1{
+        padding-top: 12px !important;
+        font-size: 24px !important;
+    }
+    #quote #p1{
+        padding: 10px 0 !important;
+        font-size: 18px !important;
+    }
+    #quote a{
+        width: 200px;
+    }
+    #serverip{
+        font-size: 20px !important;
+        top:120px !important;
+    }
+    #discordinvite #text{
+        font-size: 18px !important;
     }
 }
 
@@ -282,7 +326,7 @@ header a.active {
         max-width:400px;
     }
     #serverip{
-        font-size: 22px;
+        font-size: 20px;
         width: 270px;
     }
     #quote #p2{
@@ -305,18 +349,6 @@ header a.active {
         position: absolute;
         right:0;
         top:140px;
-    }
-    #quote a{
-        width: 230px;
-        bottom: 10px;
-    }
-    #quote a img{
-        width: 30px;
-        height: 30px;
-    }
-    #quote a h2{
-        padding:5px 0;
-        font-size: 22px;
     }
 }
 
