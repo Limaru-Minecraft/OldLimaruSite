@@ -61,7 +61,7 @@ header a.active {
     background-image: url('Resources/osaka-small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0px 120px;
+    background-position: 0px 85px;
     font-family: 'MyriadSetPro';
 }
 
@@ -78,7 +78,7 @@ header a.active {
 }
 
 #quote h1{
-    padding-top: 40px;
+    padding-top: 200px;
     font-size: 36px;
     color: white;
 }
@@ -206,7 +206,7 @@ header a.active {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: HonokaMaruGothic;
     font-size: 18px;
     opacity: 0;
     width: 180px;
