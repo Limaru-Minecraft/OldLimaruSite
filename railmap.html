@@ -20,9 +20,7 @@
         <a href="rules.html">Server Rules</a>
     </header>
     <div id="main-picture">
-      <img src="Resources/LipanURMap.png" width="50%" alt="Lipan Railway Map" style="padding-top: 130px;"><br></img>
-
-        <form>
+      <form style="padding-top: 160px; margin: 0 auto; width:50%;" align="center">
         <input type="text" placeholder="From..." id="fromInput" onkeyup="fromFilterFunction()" onfocus="fromDropdown()" onblur="fromDropdown()">
         <!-- <div id="fromDropdown" class="dropdown-content">
           <input type="button" value="Sun Moon Lake" id="fromStation"></input>
@@ -44,8 +42,8 @@
         </div> -->
 
         <input type="button" value="Search" id="RouteSearch" onclick="evalStation()"/>
+        <p id="SearchResult" style="color: white;"></p>
       </form>
-      <p id="SearchResult" style="color: white;"></p>
     </div>
   </body>
 </html>

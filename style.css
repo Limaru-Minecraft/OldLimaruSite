@@ -1,24 +1,24 @@
 @font-face {
-    font-family: "ほのか丸ゴシック";
+    font-family: "HonokaMaruGothic";
     src: url('Resources/font_1_honokamarugo_1.1.ttf');
   }
   @font-face {
-    font-family: "無数のセットプロ";
+    font-family: "MyriadSetPro";
     src: url('Resources/myriad-set-pro_text.ttf');
   }
   @font-face {
-    font-family: "タイムマシンわ号";
+    font-family: "TimemachineWa";
     src: url('Resources/timemachine-wa.ttf');
 }
 
 *{margin:0; padding:0;}
 
-body,html{height: 100%; font-family: '無数のセットプロ',Arial, Helvetica, sans-serif;}
+body,html{height: 100%; font-family: 'MyriadSetPro',Arial, Helvetica, sans-serif;}
 
 header{
     position: fixed;
     width: 100%;
-    font-family: "ほのか丸ゴシック";
+    font-family: "HonokaMaruGothic";
     color: grey;
     padding: 10px 15px;
     background-color: white;
@@ -41,7 +41,7 @@ header a{
     color: green;
     padding: 9px 15px;
     font-size: 17px;
-    font-family: '無数のセットプロ';
+    font-family: 'MyriadSetPro';
 }
 
 header a:hover {
@@ -61,8 +61,8 @@ header a.active {
     background-image: url('Resources/osaka-small.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: 0 100px;
-    font-family: '無数のセットプロ';
+    background-position: 0px 85px;
+    font-family: 'MyriadSetPro';
 }
 
 #quote{
@@ -78,7 +78,7 @@ header a.active {
 }
 
 #quote h1{
-    padding-top: 40px;
+    padding-top: 200px;
     font-size: 36px;
     color: white;
 }
@@ -157,7 +157,7 @@ header a.active {
     display: flex;
     flex-direction: column;
     background-color: rgb(219, 0, 0);
-    font-family: '無数のセットプロ';
+    font-family: 'MyriadSetPro';
     padding:10px;
     text-align: center;
     overflow: hidden;
@@ -206,7 +206,7 @@ header a.active {
 
 /* Tooltip text */
 .tooltip .tooltiptext {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: HonokaMaruGothic;
     font-size: 18px;
     opacity: 0;
     width: 180px;
