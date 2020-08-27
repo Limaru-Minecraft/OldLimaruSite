@@ -1,0 +1,425 @@
+@font-face {
+    font-family: "HonokaMaruGothic";
+    src: url('Resources/font_1_honokamarugo_1.1.ttf');
+  }
+  @font-face {
+    font-family: "MyriadSetPro";
+    src: url('Resources/myriad-set-pro_text.ttf');
+  }
+  @font-face {
+    font-family: "TimemachineWa";
+    src: url('Resources/timemachine-wa.ttf');
+}
+
+*{margin:0; padding:0;}
+
+body,html{height: 100%; font-family: 'MyriadSetPro',Arial, Helvetica, sans-serif; color: grey;}
+
+header{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    font-family: "HonokaMaruGothic";
+    padding: 10px 20px;
+    background-color: white;
+    top:0;
+    z-index: 10;
+    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
+}
+
+header img{
+    vertical-align: middle;
+}
+
+header div{
+    display: inline-block;
+    height: 100%;
+    line-height: 40px;
+    font-size: 17px;
+    width: 600px;
+}
+
+header #divl{
+    display: inline-block;
+    position:relative;
+}
+
+header span{
+    margin-left:10px;
+    font-size: 25px;
+}
+
+header #divr{
+    float: right;
+}
+
+header a{
+    text-decoration: none;
+    color: green;
+    padding: 9px 15px;
+    font-size: 17px;
+    font-family: 'MyriadSetPro';
+}
+
+header a:hover {
+    background-color: green;
+    color: yellow;
+}
+
+header a.active {
+    background-color:yellow;
+    color: black;
+}
+
+#main-picture{
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    background-image: url('Resources/osaka-small.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0px 85px;
+    font-family: 'MyriadSetPro';
+}
+
+#quote{
+    padding-left: 5%;
+    max-width: 450px;
+    height: 100%;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
+}
+
+#quote img{
+    width:58%;
+    padding-top: 180px;
+}
+
+#quote h1{
+    padding-top: 200px;
+    font-size: 36px;
+    color: white;
+}
+#quote #p1{
+    padding: 30px 0;
+    font-size: 24px;
+    color: white;
+    width: 65%;
+}
+#quote h2{
+    font-size: 26px;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+}
+#serverip{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(100,207,15,0.9);
+    width: 310px !important;
+}
+#quote a{
+    background-color: rgba(114,137,218,0.9);
+    border-radius: 10px;
+    position: absolute;
+    bottom:30px;
+    right:20px;
+    width: 260px;
+    padding-right: 5px;
+    text-align: center;
+}
+#quote a img{
+    /*position: absolute;
+    bottom: 10%;
+    left: 0%;
+    align-self: center;*/
+    padding:0 10px 0 0;
+    vertical-align: middle;
+    width: 35px;
+    height: 35px;
+}
+#quote #p2{
+    font-size: 18px;
+    padding-top: 10px;
+}
+#main-picture iframe{
+    position: absolute;
+    right:10px;
+    bottom:20px;
+}
+
+#AnnounceEvents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.AE{
+    width: 500px;
+    padding:30px;
+    margin: 20px 30px;
+    border-radius: 10px;
+}
+.AE h1{
+    margin-bottom: 10px;
+}
+.announce{
+    background-color: #FF6666;
+    color: white;
+}
+.events{
+    background-color: #FFBBBB;
+}
+
+#youtube{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(219, 0, 0);
+    font-family: 'MyriadSetPro';
+    padding:10px;
+    text-align: center;
+    overflow: hidden;
+}
+#youtube h1{
+    color: white;
+    padding:1vh 5px;
+}
+#youtube #yjjcity{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(219, 0, 0);
+}
+#youtube #yjjcity iframe{
+    margin: 10px 5px;
+    border-radius: 15px;
+}
+
+#rules{
+  padding-left: 30px;
+  padding-top: 150px;
+  width: 550px;
+  color: white;
+  background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
+}
+#rules ol{
+  padding-left: 30px;
+  font-size: 24px;
+}
+.desc{
+  font-size: 18px;
+}
+
+.hidden{
+    display: none;
+}
+
+/* Tooltip container */
+.tooltip {
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    font-family: HonokaMaruGothic;
+    font-size: 18px;
+    opacity: 0;
+    width: 180px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 99;
+    bottom: 90%;
+    left: 40%;
+    margin-left: -60px;
+    transition: 0.3s;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    opacity: 1;
+    bottom: 110%;
+}
+
+
+/*========== Support for smaller screens (Mobile Compatibility) ==========*/
+@media only screen and (max-width: 600px) {
+    header{
+        padding: 8px 6px;
+    }
+    header h1{
+        font-size:24px;
+    }
+    header div{
+        padding: 17px 0;
+    }
+    header a{
+        padding: 5px 5px;
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    #discordinvite #text{
+        display: none;
+    }
+    #quote a{
+        border-radius: 100%;
+        width: 50px !important;
+    }
+    #discordinvite .tooltiptext{
+        left:-100%;
+    }
+}
+
+@media only screen and (max-height: 400px) {
+    header{
+        padding: 0;
+    }
+    header h1{
+        font-size:22px;
+    }
+    header div{
+        padding: 12px 0;
+    }
+    header a{
+        padding: 8px 10px;
+        font-size: 17px;
+    }
+    #main-picture{
+        background-position: 0 0;
+    }
+    #quote #limaruflag{
+        padding-top: 120px !important;
+    }
+    #quote h1{
+        padding-top: 12px !important;
+        font-size: 24px !important;
+    }
+    #quote #p1{
+        padding: 10px 0 !important;
+        font-size: 18px !important;
+    }
+    #quote a{
+        width: 200px;
+    }
+    #serverip{
+        font-size: 20px !important;
+        top:120px !important;
+    }
+    #discordinvite #text{
+        font-size: 18px !important;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .AE{
+        width: 100%;
+    }
+    #quote img{
+        width:25vh;
+        padding-top: 160px;
+    }
+    #quote{
+        max-width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.3);
+        background-image:none;
+    }
+    #quote h1{
+        padding-top: 13px;
+        font-size: 30px;
+    }
+    #quote #p1{
+        padding: 20px 0;
+        font-size: 20px;
+        max-width:400px;
+    }
+    #serverip{
+        font-size: 20px;
+        width: 270px;
+    }
+    #quote #p2{
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-height: 468px) and (min-width: 500px){
+    header{
+        padding: 5px 8px;
+    }
+    #quote #p1{
+        max-width:300px;
+    }
+    #quote img{
+        padding-top: 140px;
+    }
+    #serverip{
+        border-radius: 10px 0 0 10px;
+        position: absolute;
+        right:0;
+        top:140px;
+    }
+}
+
+/* ==================== Dropdown Button ==================== */
+.fromBtn, .toBtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+}
+.fromBtn:hover, .fromBtn:focus, .toBtn:hover, .toBtn:focus {background-color: #3e8e41;}
+
+/* The search field */
+#fromInput, #toInput {
+  box-sizing: border-box;
+  background-position: 14px 12px;
+  background-repeat: no-repeat;
+  font-size: 16px;
+  padding: 14px 20px 12px 45px;
+  border: none;
+  border-bottom: 1px solid #ddd;
+}
+
+/* The search field when it gets focus/clicked on */
+#fromInput:focus, #toInput:focus {outline: 3px solid #ddd;}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f6f6f6;
+  min-width: 230px;
+  border: 1px solid #ddd;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
