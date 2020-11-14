@@ -3,6 +3,7 @@ $(document).ready(function(){
     setTimeout(function(){
         $("#loading").css("opacity","0");
         $(".page").css("display","block");
+        $("#bigtext").css("left","0");
     },200)
     setTimeout(function(){
         $("header").css("top","0px");
