@@ -137,8 +137,11 @@ header{
     #linkscontainer{
         flex-direction: row;
     }
-    .links{
-        margin-top: 5px;
+    .quote{
+        margin-bottom: 10px !important;
+    }
+    .links {
+        margin-top: 0px !important;
     }
     #ip{
         margin-right: 20px;
