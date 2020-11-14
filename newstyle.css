@@ -86,6 +86,7 @@ header{
     max-width: 540px;
     padding: 0 10px;
     background-color: yellow;
+    margin-bottom: 20px;
 }
 #slogan{
     font-size: 2em !important;
@@ -101,6 +102,7 @@ header{
     font-size: 0.8em;
     line-height: 35px;
     transition: all 0.5s;
+    margin-top: 20px;
 }
 #ip{
     background-color: rgba(0,180,0,0.9);
@@ -131,6 +133,9 @@ header{
 @media (max-height:550px) {
     #linkscontainer{
         flex-direction: row;
+    }
+    .links{
+        margin-top: 0;
     }
     #ip{
         margin-right: 20px;
