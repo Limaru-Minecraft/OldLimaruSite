@@ -1,0 +1,13 @@
+$(document).ready(function(){
+    document.getElementById('loading').innerHTML='Done!';
+    setTimeout(function(){
+        $("#loading").css("opacity","0");
+        $(".page").css("display","block");
+    },200)
+    setTimeout(function(){
+        $("header").css("top","0px");
+    },400)
+    setTimeout(function(){
+        $("#loading").css("display","none");
+    },1000)
+});

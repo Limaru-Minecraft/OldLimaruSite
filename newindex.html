@@ -14,66 +14,41 @@
     <meta property="og:image" content="https://mineshafter61.github.io/LimaruSite/Resources/coloured.png" />
     <meta name="theme-color" content="#FFFF00">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Limaru - Create. Build. Explore.</title>
+    <title>Limaru - Innovate, Create, Experience.</title>
     <link rel="shortcut icon" href="Resources/coloured.png" />
     <link rel="stylesheet" href="newstyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./loading.js"></script>
+    <script type="text/javascript" src="./coverpage.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,500;0,600;1,500;1,600;1,700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <header>
-      <div id="divl">
-        <img src="Resources/limaruflagsmall.png" style="height: 100%; padding-left:7%;" />
-        <span>Federal Republic of Limaru</span>
-      </div>
-      <div id="divr">
-        <a class="active">Home</a>
-        <a href="story.html">Our Story</a>
-        <a href="railmap.html">Rail Map</a>
-        <a href="http://play.limaru.cf:8077">Dynmap</a>
-        <a href="rules.html">Server Rules</a>
-      </div>
-    </header>
-    <div id="main-picture">
-      <div id="quote">
-        <img id="limaruflag"/>
-        <h1>Innovate, Create, Experience.</h1>
-        <p id="p1">A city server with a constant power struggle that makes it so much more.</p>
-        <input type="text" class="hidden" id="serverIP" value="play.limaru.cf:25580"/>
-        <h2 class="tooltip" id="serverip" onclick="copyIP()">play.limaru.cf:25580<span class="tooltiptext" id="serverIPtooltip">Click to copy!</span><p id="p2">Java 1.15</p></h2>
-        <a href="https://discord.gg/ZDQHGbr" style="text-decoration: none;" target="_blank">
-          <h2 id="discordinvite" class="tooltip"><img src="Resources/Discord-Logo-White.png"><span id="text">Join our Discord!</span><span class="tooltiptext" id="serverIPtooltip">Click to join!</span></h2>
-        </a>
-      </div>
+    <div id="loading" class="flexcolumn justify-ctr align-ctr">
+      <p>Loading...</p>
     </div>
-    <div id="AnnounceEvents">
-      <div class="AE announce">
-        <h1>Latest Announcements</h1>
-        <p>There are no Announcements to show.</p>
+    <header class="flexrow align-ctr page">
+      <h1>Federal Republic of Limaru</h1>
+    </header>
+    <div id="cover">
+    </div>
+    <div id="bigtext" class="flexcolumn justify-ctr">
+      <h2 id="slogan" class="quote"><i>Innovate, Create, Experience.</i></h2>
+      <br>
+      <p class="quote">A community going above and beyond to explore new ideas and innovations in the endless possibilities of Minecraft.<br>What Will <b><i>You</i></b> Create?</p>
+      <br>
+      <br>
+      <div class="links" id="ip">
+        <h3>play.limaru.cf:25580</h3>
+        <p>Click to Copy! (Versions 1.12-1.16+)</p>
       </div>
-      <div class="AE events">
-        <h1>Events</h1>
-        <p>There are no Events to show.</p>
-      </div>
-      <div id="youtube">
-        <h1>Latest Videos from Limaru</h1>
-        <div id="yjjcity">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-          <iframe class="latestVideoEmbed" vnum='0' cid="UClXAzRUETUB8Zqn7PwaPBSQ" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-          <iframe class="latestVideoEmbed" vnum='1' cid="UClXAzRUETUB8Zqn7PwaPBSQ" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-
-        </div>
-        <hr>
-        <br>
-        <h1>Latest Videos from YJJ City Project</h1>
-        <div id="yjjcity">
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-          <iframe class="latestVideoEmbed" vnum='0' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-          <iframe class="latestVideoEmbed" vnum='1' cid="UCwrTn_ZR2yjRZrdtlzfYs2A" width="540" height="304" frameborder="0" allowfullscreen allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"></iframe>
-
-
-        </div>
+      <br>
+      <div class="links" id="discord">
+        <h3>discord.gg/ykrbZga</h3>
+        <p>Click to join our Discord Server!</p>
       </div>
     </div>
   </body>
-  <script async src="./scripts.js"></script>
-  <script async src="youtubevideos.js"></script>
 </html>
