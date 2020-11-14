@@ -111,6 +111,7 @@ header{
     background-color: rgba(0,200,0,0.9);
     border: 8px solid rgba(0,255,0,1);
     box-shadow: 0px 0px 20px 0px rgba(0,255,0,1);
+    cursor: pointer;
 }
 #discord{
     background-color: rgba(114,137,218,0.9);
@@ -121,6 +122,7 @@ header{
     background-color: rgba(114,137,218,0.9);
     border: 8px solid rgb(56, 82, 255);
     box-shadow: 0px 0px 20px 0px rgb(67, 92, 255);
+    cursor: pointer;
 }
 .links h3{
     font-size: 1.7em;
@@ -143,8 +145,8 @@ header{
         font-weight: 700;
     }
     .links{
-        font-size: 0.7em;
-        border-width: 4px !important;
-        padding: 3px 10px;
+        font-size: 0.6em;
+        border-width: 5px !important;
+        padding: 3px 15px;
     }
 }

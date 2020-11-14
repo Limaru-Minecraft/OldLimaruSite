@@ -1,6 +1,9 @@
 function pictures(){
     $('#cover').css("background-image","url('./Resources/osaka-small.jpg')")
     setTimeout(function(){
+        $('#cover').css("opacity","1")
+    },100)
+    setTimeout(function(){
         $('#cover').css("opacity","0")
     },3500)
     setTimeout(function(){
@@ -8,6 +11,9 @@ function pictures(){
     },4000)
     setTimeout(function(){
         $('#cover').css("opacity","1")
-    },4500)
+    },4100)
+    setTimeout(function(){
+        $('#cover').css("opacity","0")
+    },7500)
 }
 window.setInterval(pictures,8000)
