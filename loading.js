@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    document.getElementById('loading').innerHTML='Done!';
+    document.getElementById("loading").innerHTML='<p>Done!</p>';
     setTimeout(function(){
         $("#loading").css("opacity","0");
         $("#bigtext").css("left","0");
@@ -9,5 +9,15 @@ $(document).ready(function(){
     },400)
     setTimeout(function(){
         $("#loading").css("display","none");
-    },1000)
+        document.getElementById("loading").innerHTML='<p>Loading...</p>';
+    },700)
 });
+function loadingpage() {
+    console.log("Ok")
+    $("#loading").css("display","flex");
+    setTimeout(function(){
+        $("#loading").css("opacity","1");
+    },30)
+    
+    console.log("Done")
+}
