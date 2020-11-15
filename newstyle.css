@@ -19,7 +19,7 @@ body,html{height: 100%; font-family: 'Source Sans Pro',Arial, Helvetica, sans-se
     position: fixed;
     width: 100%;
     height: 100%;
-    background-color: #555;
+    background-color: gray;
     color: black;
     z-index: 99;
     opacity: 1;
