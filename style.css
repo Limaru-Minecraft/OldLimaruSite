@@ -60,8 +60,9 @@ header a.active {
     width: 100%;
     background-image: url('Resources/osaka-small.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 85px;
+    background-repeat: repeat;
+    background-position: 0px 0px;
+    background-attachment: fixed;
     font-family: 'MyriadSetPro';
 }
 
@@ -180,10 +181,11 @@ header a.active {
 
 #rules{
   padding-left: 30px;
-  padding-top: 150px;
+  padding-top: 100px;
   width: 550px;
   color: white;
-  background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
+  /* background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%); */
+  font-family: MyriadSetPro
 }
 #rules ol{
   padding-left: 30px;
