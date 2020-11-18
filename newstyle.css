@@ -11,7 +11,7 @@
     src: url('Resources/timemachine-wa.ttf');
 }
 
-*{margin:0; padding:0; transition: all 1s;}
+*{margin:0; padding:0; transition: all 0.5s;}
 
 body,html{height: 100%; font-family: 'Source Sans Pro',Arial, Helvetica, sans-serif; color: #555;}
 

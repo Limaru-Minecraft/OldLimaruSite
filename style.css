@@ -15,53 +15,15 @@
 
 body,html{height: 100%; font-family: 'MyriadSetPro',Arial, Helvetica, sans-serif;}
 
-header{
-    position: fixed;
-    width: 100%;
-    font-family: "HonokaMaruGothic";
-    color: grey;
-    padding: 10px 15px;
-    background-color: white;
-    top:0;
-    z-index: 10;
-    box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.2);
-}
-
-header h1{
-    padding: 10px 0;
-    font-size:28px;
-}
-
-header div{
-    padding: 20px 0;
-}
-
-header a{
-    text-decoration: none;
-    color: green;
-    padding: 9px 15px;
-    font-size: 17px;
-    font-family: 'MyriadSetPro';
-}
-
-header a:hover {
-    background-color: green;
-    color: yellow;
-}
-
-header a.active {
-    background-color:yellow;
-    color: black;
-}
-
 #main-picture{
     background-color: gray;
     height: 100%;
     width: 100%;
     background-image: url('Resources/osaka-small.jpg');
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0px 85px;
+    background-repeat: repeat;
+    background-position: 0px 0px;
+    background-attachment: fixed;
     font-family: 'MyriadSetPro';
 }
 
@@ -180,10 +142,11 @@ header a.active {
 
 #rules{
   padding-left: 30px;
-  padding-top: 150px;
+  padding-top: 100px;
   width: 550px;
   color: white;
-  background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%);
+  /* background-image: linear-gradient(to right, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%); */
+  font-family: MyriadSetPro
 }
 #rules ol{
   padding-left: 30px;
