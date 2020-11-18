@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).ready(function(){
     document.getElementById("loading").innerHTML='<p>Done!</p>';
     setTimeout(function(){
         $("#loading").css("opacity","0");
@@ -6,6 +6,7 @@ $(document).ready(function(){
     },200)
     setTimeout(function(){
         $("header").css("top","0px");
+        $("#rulesiframe").css("opacity","1");
     },400)
     setTimeout(function(){
         $("#loading").css("display","none");

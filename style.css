@@ -85,11 +85,6 @@ body,html{height: 100%; font-family: 'MyriadSetPro',Arial, Helvetica, sans-serif
     font-size: 18px;
     padding-top: 10px;
 }
-#main-picture iframe{
-    position: absolute;
-    right:10px;
-    bottom:20px;
-}
 
 #AnnounceEvents{
     display: flex;
