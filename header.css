@@ -29,8 +29,10 @@ header button{
     border: none;
     border-radius: 10px;
     background-color: #EEE;
-    transition: all 0.3s;
     outline: none;
+}
+header *{
+    transition: all 0.2s;
 }
 header .current{
     background-color: yellow;
