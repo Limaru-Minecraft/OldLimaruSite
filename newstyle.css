@@ -73,6 +73,7 @@ body,html{height: 100%; font-family: 'Source Sans Pro',Arial, Helvetica, sans-se
     padding: 0 10px;
     background-color: yellow;
     margin-bottom: 20px;
+    font-family:MyriadSetPro;
 }
 #slogan{
     font-size: 2em !important;
@@ -94,23 +95,27 @@ body,html{height: 100%; font-family: 'Source Sans Pro',Arial, Helvetica, sans-se
     background-color: rgba(0,180,0,0.9);
     border: 8px solid rgba(0,210,0,1);
     box-shadow: 0px 0px 20px 0px rgba(0,255,0,0.3);
+    font-family:HonokaMaruGothic;
 }
 #ip:hover{
     background-color: rgba(0,200,0,0.9);
     border: 8px solid rgba(0,255,0,1);
     box-shadow: 0px 0px 20px 0px rgba(0,255,0,1);
     cursor: pointer;
+    font-family:HonokaMaruGothic;
 }
 #discord{
     background-color: rgba(114,137,218,0.9);
     border: 8px solid rgb(49, 74, 235);
     box-shadow: 0px 0px 20px 0px rgba(114,137,218,0.3);
+    font-family:HonokaMaruGothic;
 }
 #discord:hover{
     background-color: rgba(114,137,218,0.9);
     border: 8px solid rgb(56, 82, 255);
     box-shadow: 0px 0px 20px 0px rgb(67, 92, 255);
     cursor: pointer;
+    font-family:HonokaMaruGothic;
 }
 .links h3{
     font-size: 1.7em;
@@ -125,6 +130,7 @@ body,html{height: 100%; font-family: 'Source Sans Pro',Arial, Helvetica, sans-se
     line-height: 50px;
     font-weight: 700;
     color: black;
+    font-family:MyriadSetPro;
 }
 #pyf{
     font-weight: 800;
