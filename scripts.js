@@ -58,10 +58,8 @@ function evalStation() {
   from = document.getElementById("fromInput").value;
   to = document.getElementById("toInput").value;
   var farechart = JSON.parse(fares);
-  from1 = from.replace(/\s/g, '');
-  to1 = to.replace(/\s/g, '');
-  if (farechart[from1][to1] != null) {
-    document.getElementById("SearchResult").innerHTML = "Fare from " + from + " to " + to + " is £"+farechart[from1][to1];
+  if (farechart[from][to] != null) {
+    document.getElementById("SearchResult").innerHTML = "Fare from " + from + " to " + to + " is £"+farechart[from][to];
   } else {
     // Error code
     document.getElementById("SearchResult").innerHTML = "Sorry, but we could not find the stations specified. Please try again.";
