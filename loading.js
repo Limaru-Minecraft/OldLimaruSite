@@ -3,15 +3,15 @@ $(window).ready(function(){
     setTimeout(function(){
         $("#loading").css("opacity","0");
         $("#bigtext").css("left","0");
-    },200)
+    },300)
     setTimeout(function(){
         $("header").css("top","0px");
         $("#rulesiframe").css("opacity","1");
-    },400)
+    },500)
     setTimeout(function(){
         $("#loading").css("display","none");
         document.getElementById("loading").innerHTML='<p>Loading...</p>';
-    },700)
+    },800)
 });
 function loadingpage() {
     console.log("Ok")

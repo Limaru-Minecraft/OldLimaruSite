@@ -1,8 +1,12 @@
+@font-face {
+    font-family: HonakaMaruGothic;
+    src: url("./Resources/font_1_honokamarugo_1.1.ttf");
+}
 header{
     position: fixed;
     width: 100%;
     height: 40px;
-    font-family: "HonokaMaruGothic";
+    font-family: HonakaMaruGothic, "Arial Rounded MT", Arial, sans-serif;
     padding: 10px 20px;
     background-color: white;
     top:-80px;
@@ -25,7 +29,9 @@ header button{
     color: #4CAF50;
     display: flex;
     align-items: center;
+    font-family: HonakaMaruGothic, "Arial Rounded MT", Arial, sans-serif;
     font-size: 1em;
+    font-weight: bold;
     border: none;
     border-radius: 10px;
     background-color: #EEE;
