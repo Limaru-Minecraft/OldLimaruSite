@@ -310,6 +310,10 @@ body,html{height: 100%; font-family: 'MyriadSetPro',Arial, Helvetica, sans-serif
     }
 }
 
+.story-chapter{
+  color: inherit;
+}
+
 /* ==================== Dropdown Button ==================== */
 .fromBtn, .toBtn {
   background-color: #4CAF50;

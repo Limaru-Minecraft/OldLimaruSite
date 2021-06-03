@@ -55,7 +55,7 @@
           <polyline points="5 12 3 12 12 3 21 12 19 12" />
           <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
           <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
-        </svg><p style="font-family:HonokaMaruGothic;">Fare Calculator</p></button>
+        </svg><p style="font-family:HonokaMaruGothic;">Rail Map</p></button>
         <button class="selectable" onclick='window.open("http://play.limaru.cf:8077/")'><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#4CAF50" fill="none" stroke-linecap="round" stroke-linejoin="round">
           <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
           <line x1="18" y1="6" x2="18" y2="6.01" />
@@ -74,17 +74,9 @@
       </div>
     </header>
 
-    <div id="cover">
-    </div>
-    <div id="bigtext" class="flexcolumn justify-ctr">
-      <h2 style="text-align:center; color:yellow;">Fare Calculator</h2>
-      <form style="margin: 0 auto; width:50%;" align="center">
-        <input style="font-family:HonokaMaruGothic;color:DarkTurquoise;" type="text" placeholder="From..." id="fromInput" onkeyup="fromFilterFunction()" onfocus="fromDropdown()" onblur="fromDropdown()">
-        <input style="font-family:HonokaMaruGothic;color:DarkTurquoise;" type="text" placeholder="To..." id="toInput" onkeyup="toFilterFunction()" onfocus="toDropdown()" onblur="toDropdown()">
-        <input type="button" value="Search" id="RouteSearch" onclick="evalStation()"/>
-        <p id="SearchResult" style="color: white; font-size:24px"></p>
-      </form>
-    </div>
+    <div>
+    <br><br><br><br><br><br>
+    <object type="image/svg+xml" data="TrenMap-v5-0-Web.svg"></object>
     </div>
 
   </body>
