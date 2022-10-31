@@ -1,0 +1,27 @@
+{
+  "name": "limarusite",
+  "version": "1.0.0",
+  "description": "Limaru's website",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Limaru-City-Server/LimaruSite.git"
+  },
+  "keywords": [
+    "Limaru",
+    "LimaruSite"
+  ],
+  "author": "mikeshafter, yjjcoolcool",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Limaru-City-Server/LimaruSite/issues"
+  },
+  "homepage": "https://github.com/Limaru-City-Server/LimaruSite#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pug": "^3.0.2"
+  }
+}
